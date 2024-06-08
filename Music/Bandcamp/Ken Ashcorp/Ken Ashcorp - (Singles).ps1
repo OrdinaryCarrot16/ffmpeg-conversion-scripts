@@ -20,13 +20,13 @@ Move-Item -Path "cover_TMP.png" -Destination "Ken Ashcorp/(Singles) (Converted)/
 
 New-Item -Path "Ken Ashcorp/(Singles) (Converted)/In The Zone (Single)" -ItemType Directory
 ffmpeg -y -i "Ken Ashcorp - In The Zone.flac" -an -vf scale=1024:1024 -sws_flags bicubic "cover_TMP.png"
-ffmpeg -ss 00:01:00.550 -to 00:04:53.900 -i "Ken Ashcorp - In The Zone.flac" -map_metadata -1 -map 0:0 -metadata artist="Ken Ashcorp" -metadata album_artist="Ken Ashcorp" -metadata album="In The Zone (Single)" -metadata date="2014-07-29" -metadata genre="Rock" -metadata title="In The Zone" "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "In The Zone.ogg"
+ffmpeg -ss 00:01:00.550 -to 00:04:53.900 -i "Ken Ashcorp - In The Zone.flac" -map_metadata -1 -map 0:0 -metadata artist="Ken Ashcorp" -metadata album_artist="Ken Ashcorp" -metadata album="In The Zone (Single)" -metadata date="2014-07-29" -metadata genre="Rock" -metadata title="In The Zone" -af "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "In The Zone.ogg"
 Move-Item -Path "In The Zone.ogg" -Destination "Ken Ashcorp/(Singles) (Converted)/In The Zone (Single)"
 Move-Item -Path "cover_TMP.png" -Destination "Ken Ashcorp/(Singles) (Converted)/In The Zone (Single)/cover.png"
 
 New-Item -Path "Ken Ashcorp/(Singles) (Converted)/Not One Less (Single)" -ItemType Directory
 ffmpeg -y -i "Ken Ashcorp - Not One Less.flac" -an -vf scale=1024:1024 -sws_flags bicubic "cover_TMP.png"
-ffmpeg -ss 00:01:00.300 -to 00:03:45.000 -i "Ken Ashcorp - Not One Less.flac" -map_metadata -1 -map 0:0 -metadata artist="Ken Ashcorp" -metadata album_artist="Ken Ashcorp" -metadata album="Not One Less (Single)" -metadata date="2020-01-05" -metadata genre="Rock" -metadata title="Not One Less" "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "Not One Less.ogg"
+ffmpeg -ss 00:01:00.300 -to 00:03:45.000 -i "Ken Ashcorp - Not One Less.flac" -map_metadata -1 -map 0:0 -metadata artist="Ken Ashcorp" -metadata album_artist="Ken Ashcorp" -metadata album="Not One Less (Single)" -metadata date="2020-01-05" -metadata genre="Rock" -metadata title="Not One Less" -af "apad=pad_dur=3s,volume=-5dB" -c:a libvorbis -q 6 -minrate 128k "Not One Less.ogg"
 Move-Item -Path "Not One Less.ogg" -Destination "Ken Ashcorp/(Singles) (Converted)/Not One Less (Single)"
 Move-Item -Path "cover_TMP.png" -Destination "Ken Ashcorp/(Singles) (Converted)/Not One Less (Single)/cover.png"
 
