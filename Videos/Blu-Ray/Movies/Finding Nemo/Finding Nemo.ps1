@@ -17,13 +17,13 @@ Rename-Item -Path "Finding Nemo_t20.mkv" -NewName "Finding Nemo.mkv"
 if ($rip_encode -eq "2") {
 New-Item -Path "Finding Nemo (Converted)" -ItemType Directory
 
-ffmpeg -i "Finding Nemo.avs" -c:v libx264 -tune film -profile:v main -preset slow -crf 20 "Finding Nemo_TMP.264"
-ffmpeg -i "Finding Nemo.avs" -c:a aac -b:a 192k "Finding Nemo_TMP.aac"
-mp4box -add "Finding Nemo_TMP.264" -fps 23.976 -add "Finding Nemo_TMP.aac" -new "Finding Nemo.mp4"
-Move-Item -Path "Finding Nemo.mp4" -Destination "Finding Nemo (Converted)/Finding Nemo.mp4"
+ffmpeg -i "Finding Nemo.avs" -c:v libvpx-vp9 -cpu-used 2 -row-mt 1 -crf 20 -b:v 10M -an "Finding Nemo_TMP.webm"
+ffmpeg -i "Finding Nemo.avs" -c:a libopus -b:a 192k "Finding Nemo_TMP.opus"
+mkvmerge -o "Finding Nemo.webm" --webm ("Finding Nemo_TMP.webm") ("Finding Nemo_TMP.opus") --display-dimensions 0:1280x720 --default-duration 0:23.976fps
+Move-Item -Path "Finding Nemo.webm" -Destination "Finding Nemo (Converted)/Finding Nemo.webm"
 
-Remove-Item "Finding Nemo_TMP.264"
-Remove-Item "Finding Nemo_TMP.aac"
+Remove-Item "Finding Nemo_TMP.webm"
+Remove-Item "Finding Nemo_TMP.opus"
 Remove-Item "Finding Nemo.mkv.ffindex"
 }
 
