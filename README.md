@@ -73,7 +73,7 @@ Here is a list of the various codecs/containers I will be using in this project,
 
 - WEBM (open-source container)
 - VP8 (open-source video codec) (For SD sources, works better with lower resolution content)
-- VP9(open-source video codec) (For HD sources, works better with higher resolution content)
+- VP9 (open-source video codec) (For HD sources, works better with higher resolution content)
 - OPUS (open-source audio codec) 
 
 ###### Music
