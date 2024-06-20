@@ -8,7 +8,7 @@ A collection of generated + tweaked powershell/batch scripts that will automatic
 
 - [PowerShell](https://github.com/PowerShell/PowerShell) (for generating & running the scripts)
 - [FFmpeg](https://ffmpeg.org/) (for pretty much all encoding/decoding tasks)
-- [GPAC/MP4Box](https://github.com/gpac/gpac) (for MP4 muxing)
+- [MKVToolNix](https://mkvtoolnix.download/downloads.html) (for WEBM muxing)
 - [MakeMKV](https://makemkv.com/) (for DVD/Blu-Ray conversion) (**W.I.P.**)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) (for YouTube conversion)
 - [AviSynth+](https://avs-plus.net/) (for scripted video editing)
@@ -35,7 +35,7 @@ I would recommend doing this manually, as I may glitch something if I did it aut
    
    1. FFmpeg
    2. MakeMKV
-   3. GPAC/MP4Box
+   3. MKVToolNix
 
 6. Click "OK" when done
 7. Profit?
@@ -71,9 +71,10 @@ Here is a list of the various codecs/containers I will be using in this project,
 
 ###### Video
 
-- MP4 (compatible container)
-- x264 (compatible video codec) (open-source) (1080p>720p downscale for Blu-Ray (more space savings and still good quality), 480p for DVD)
-- AAC (compatible audio codec) 
+- WEBM (open-source container)
+- VP8 (open-source video codec) (For SD sources, works better with lower resolution content)
+- VP9(open-source video codec) (For HD sources, works better with higher resolution content)
+- OPUS (open-source audio codec) 
 
 ###### Music
 
