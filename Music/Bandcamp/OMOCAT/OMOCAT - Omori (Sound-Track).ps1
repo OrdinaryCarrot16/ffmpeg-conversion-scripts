@@ -484,7 +484,7 @@ Move-Item -Path "158 - A Home For Flowers (Daisy).ogg" -Destination "OMOCAT/Omor
 ffmpeg -i "OMORI - OMORI OST - 159 Remina.flac" -map_metadata -1 -map 0:0 -metadata artist="OMOCAT" -metadata album_artist="OMOCAT" -metadata album="Omori (Sound-Track)" -metadata date="2020-12-25" -metadata genre="Sound-Track" -metadata track="159/179" -metadata title="Remina" -af "volume=-1dB" -c:a libvorbis -q 6 -minrate 128k "159 - Remina.ogg"
 Move-Item -Path "159 - Remina.ogg" -Destination "OMOCAT/Omori (Sound-Track) (Converted)"
 
-ffmpeg -i "OMORI - OMORI OST - 160 Normal..flacOMORI - OMORI OST - 160 Normal..flac" -map_metadata -1 -map 0:0 -metadata artist="OMOCAT" -metadata album_artist="OMOCAT" -metadata album="Omori (Sound-Track)" -metadata date="2020-12-25" -metadata genre="Sound-Track" -metadata track="160/179" -metadata title="Normal" -af "volume=-1dB" -c:a libvorbis -q 6 -minrate 128k "160 - Normal.ogg"
+ffmpeg -i "OMORI - OMORI OST - 160 Normal..flac" -map_metadata -1 -map 0:0 -metadata artist="OMOCAT" -metadata album_artist="OMOCAT" -metadata album="Omori (Sound-Track)" -metadata date="2020-12-25" -metadata genre="Sound-Track" -metadata track="160/179" -metadata title="Normal" -af "volume=-1dB" -c:a libvorbis -q 6 -minrate 128k "160 - Normal.ogg"
 Move-Item -Path "160 - Normal.ogg" -Destination "OMOCAT/Omori (Sound-Track) (Converted)"
 
 ffmpeg -i "OMORI - OMORI OST - 161 Your Catastrophes.flac" -map_metadata -1 -map 0:0 -metadata artist="OMOCAT" -metadata album_artist="OMOCAT" -metadata album="Omori (Sound-Track)" -metadata date="2020-12-25" -metadata genre="Sound-Track" -metadata track="161/179" -metadata title="Your Catastrophes" -af "volume=1dB" -c:a libvorbis -q 6 -minrate 128k "161 - Your Catastrophes.ogg"
