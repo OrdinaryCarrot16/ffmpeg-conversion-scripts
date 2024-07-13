@@ -488,3 +488,5 @@ Remove-Item "Credits_TMP_1.mkv.ffindex"
 Remove-Item "Credits_TMP_2.mkv.ffindex"
 Remove-Item "Credits_TMP_3.mkv.ffindex"
 }
+
+pause

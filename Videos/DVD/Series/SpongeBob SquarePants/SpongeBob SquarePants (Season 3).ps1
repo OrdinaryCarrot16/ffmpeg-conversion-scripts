@@ -463,3 +463,4 @@ Remove-Item "Credits_TMP_7.mkv.ffindex"
 Remove-Item "Credits_TMP_8.mkv.ffindex"
 Remove-Item "Credits_TMP_9.mkv.ffindex"
 }
+pause
