@@ -23,25 +23,25 @@ But for the time being and the potential future, enjoy the scripts.
 
    - [X] Ripped Episodes
    - [ ] Ripped Extras
-   - [X] Re-Encoded
+   - [ ] Re-Encoded
 
 ### Season 4:
 
    - [X] Ripped Episodes
    - [ ] Ripped Extras
-   - [X] Re-Encoded
+   - [ ] Re-Encoded
 
 ### Season 5:
 
    - [X] Ripped Episodes
    - [ ] Ripped Extras
-   - [X] Re-Encoded
+   - [ ] Re-Encoded
 
 ### Season 6:
 
    - [X] Ripped Episodes
    - [ ] Ripped Extras
-   - [X] Re-Encoded
+   - [ ] Re-Encoded
 
 ## Going on SpongeBob conversion hiatus after re-encoding Season 6
 
