@@ -17,6 +17,7 @@ Rename-Item -Path "Pinocchio Disney Signature Collection_t01.mkv" -NewName "Pino
 if ($rip_encode -eq "2") {
 New-Item -Path "Pinocchio (1940) (Converted)" -ItemType Directory
 
+# Estimated File Size: 1.6 GB
 ffmpeg -i "Pinocchio (1940).avs" -c:v libvpx-vp9 -cpu-used 2 -row-mt 1 -crf 20 -b:v 10M -an "Pinocchio (1940)_TMP.webm"
 ffmpeg -i "Pinocchio (1940).avs" -c:a libopus -b:a 192k "Pinocchio (1940)_TMP.opus"
 mkvmerge -o "Pinocchio (1940).webm" --webm ("Pinocchio (1940)_TMP.webm") ("Pinocchio (1940)_TMP.opus") --display-dimensions 0:960x720 --default-duration 0:23.976fps
