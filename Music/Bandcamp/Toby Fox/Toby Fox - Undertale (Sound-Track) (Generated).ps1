@@ -1,4 +1,6 @@
-﻿New-Item -Path "Toby Fox/Undertale (Sound-Track) (Converted)" -ItemType Directory
+﻿# https://tobyfox.bandcamp.com/album/undertale-soundtrack
+
+New-Item -Path "Toby Fox/Undertale (Sound-Track) (Converted)" -ItemType Directory
 
 
 ffmpeg -i "cover.png" -an -vf scale=1024:1024 -sws_flags bicubic cover_TMP.png
